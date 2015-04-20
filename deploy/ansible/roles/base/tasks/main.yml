@@ -1,0 +1,10 @@
+# Get the box up and running. These tasks run before the box is configured
+# or the project is cloned or built. All system dependencies should be
+# installed here.
+
+- name: install apt packages
+  apt: name={{item}} state=latest update_cache=yes
+  with_items:
+    - nginx
+    - git
+    - php5-fpm

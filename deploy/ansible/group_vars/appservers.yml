@@ -1,0 +1,9 @@
+# For [appservers] defined in deploy/ansible/inventory/production
+
+env: production
+
+# Should the Nginx server use HTTPS instead of HTTP?
+ssl: false
+
+ssl_key_path:
+ssl_cert_path:
