@@ -2,4 +2,4 @@
 # been tested locally or in staging, make changes "live" here.
 
 [appservers]
-rng.io ansible_ssh_host=54.164.153.94
+rng.io

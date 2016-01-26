@@ -3,7 +3,8 @@
 # changes or need to update any installed apt modules to their latest versions.
 
 - hosts: all
-  sudo: yes
+  become: yes
+  become_method: sudo
   roles:
     - base
     - configure
